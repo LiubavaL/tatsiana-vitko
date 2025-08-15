@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 62px;
+    min-width: 62px;
+    height: 60px;
+    min-height: 60px;
+}
+
+.caption {
+    color: var(--chakra-colors-gray-500);
+    font-size: var(--chakra-font-sizes-sm);
+}
+
+.links {
+    display: flex;
+}
+
+.link, .action {
+    text-transform: uppercase;
+}
