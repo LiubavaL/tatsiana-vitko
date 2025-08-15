@@ -214,9 +214,8 @@ export interface Testimonial {
   id: string;
   'author name': string;
   testimony: string;
-  'author description'?: string | null;
-  'author avatar'?: (string | null) | Media;
-  'video link'?: string | null;
+  authorDescription?: string | null;
+  authorAvatar?: (string | null) | Media;
   updatedAt: string;
   createdAt: string;
 }
@@ -420,9 +419,8 @@ export interface PostsSelect<T extends boolean = true> {
 export interface TestimonialsSelect<T extends boolean = true> {
   'author name'?: T;
   testimony?: T;
-  'author description'?: T;
-  'author avatar'?: T;
-  'video link'?: T;
+  authorDescription?: T;
+  authorAvatar?: T;
   updatedAt?: T;
   createdAt?: T;
 }

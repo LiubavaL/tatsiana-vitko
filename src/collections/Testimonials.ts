@@ -10,21 +10,18 @@ export const Testimonials: CollectionConfig = {
     },
     {
       name: 'testimony',
+      label: 'Testimony (Text or Video)',
       type: 'textarea',
       required: true,
     },
     {
-      name: 'author description',
+      name: 'authorDescription',
       type: 'textarea',
     },
     {
-      name: 'author avatar',
+      name: 'authorAvatar',
       type: 'upload',
       relationTo: 'media',
-    },
-    {
-      name: 'video link',
-      type: 'text',
     },
   ],
 }
