@@ -1,19 +1,22 @@
 .header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+    border-bottom: 1px solid var(--chakra-colors-gray-800);
 }
 
-.logo {
-    width: 62px;
-    min-width: 62px;
-    height: 60px;
-    min-height: 60px;
+.headerContent {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    max-width: 1570px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .caption {
+    display: block;
     color: var(--chakra-colors-gray-500);
     font-size: var(--chakra-font-sizes-sm);
+    margin-left: 34px;
+    line-height: 1.2;
 }
 
 .links {
