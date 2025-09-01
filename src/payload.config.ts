@@ -14,6 +14,7 @@ import { Media } from './collections/Media'
 import { Posts } from './collections/Posts'
 import { Header } from './globals/Header'
 import { Footer } from './globals/Footer'
+import { Socials } from './globals/Socials'
 import { Testimonials } from './collections/Testimonials'
 import { Quizzes } from './collections/Quizzes'
 
@@ -21,7 +22,7 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
-  globals: [Header, Footer],
+  globals: [Header, Footer, Socials],
   admin: {
     user: Users.slug,
     importMap: {
