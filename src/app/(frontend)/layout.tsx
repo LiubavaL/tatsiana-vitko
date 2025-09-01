@@ -3,6 +3,7 @@ import './styles.css'
 import HeaderServer from '@/blocks/header/Server'
 import FooterServer from '@/blocks/footer/Server'
 import { Provider } from '@/app/components/ui/provider'
+import Main from '../components/Main/Main'
 
 export const metadata = {
   description: 'A blank template using Payload in a Next.js app.',
@@ -17,7 +18,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
       <body>
         <Provider>
           <HeaderServer />
-          <main>{children}</main>
+          <Main>{children}</Main>
           <FooterServer />
         </Provider>
       </body>
