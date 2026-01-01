@@ -3,7 +3,7 @@ import React from 'react'
 import { getPayload } from 'payload'
 import config from '@payload-config'
 import { resolveSocialIconName } from '@/helpers'
-import Logo from '../logo/Server'
+import Logo from '@/app/components/ui/logo/Server'
 import Icon from '@/app/components/ui/icon'
 import style from './Footer.module.css'
 

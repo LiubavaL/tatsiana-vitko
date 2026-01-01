@@ -1,0 +1,24 @@
+.container {
+  padding: 180px 0 120px;
+  background-color: var(--primary-color);
+}
+
+.text {
+  width: 60%;
+}
+
+.title,
+.heading,
+.description {
+  margin-left: var(--chakra-spacing-10);
+}
+
+.description {
+  line-height: 1.5;
+  color: var(--chakra-colors-gray-300);
+}
+
+.title,
+.heading {
+  margin-bottom: 12px;
+}

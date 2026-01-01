@@ -1,0 +1,14 @@
+.heading {
+}
+
+.heading:before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: relative;
+  bottom: 2px;
+}

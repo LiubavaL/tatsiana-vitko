@@ -1,0 +1,10 @@
+.authorVideoContainer {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.authorQuote {
+  line-height: 1.2 !important;
+  margin-bottom: 1rem;
+}

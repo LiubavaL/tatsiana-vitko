@@ -1,0 +1,42 @@
+.testimonialsDesc {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  flex-flow: column;
+  height: min-content;
+  min-height: 490px;
+  overflow: hidden;
+  padding: 20px;
+  width: 25%;
+}
+
+.testimonialDescText {
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.testimonials {
+  display: flex;
+  gap: 100px;
+  background-color: #000000;
+  padding-inline: var(--chakra-spacing-12);
+  padding-block: var(--chakra-spacing-24);
+}
+
+.testimonialsItem {
+  margin-top: var(--chakra-spacing-12);
+}
+
+.testimonialContent {
+  position: relative;
+  width: 100%;
+}
+
+.testimonialArrows {
+  position: absolute;
+  right: 0;
+  top: 330px;
+  display: flex;
+  gap: 0.5rem;
+}

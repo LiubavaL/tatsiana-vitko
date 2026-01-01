@@ -1,0 +1,13 @@
+.author {
+  display: flex;
+  /* margin-top: var(--chakra-spacing-8); */
+  align-items: center;
+}
+
+.authorAvatar {
+  margin-right: var(--chakra-spacing-2);
+}
+
+.authorDescription {
+  color: var(--chakra-colors-gray-400);
+}

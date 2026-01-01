@@ -3,7 +3,7 @@ import './styles.css'
 import HeaderServer from '@/blocks/header/Server'
 import FooterServer from '@/blocks/footer/Server'
 import { Provider } from '@/app/components/ui/provider'
-import Main from '../components/Main/Main'
+import Main from '@/app/components/Main/Main'
 
 export const metadata = {
   description: 'A blank template using Payload in a Next.js app.',
