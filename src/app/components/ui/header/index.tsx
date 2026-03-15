@@ -45,7 +45,7 @@ export default function Header(props: {
           </ul>
 
           <Button size="xs" className={styles.action} rounded="2xl">
-            Записаться
+            <Link href="/contact"> Записаться</Link>
           </Button>
         </Flex>
       </div>
