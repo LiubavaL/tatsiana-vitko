@@ -1,0 +1,28 @@
+.article {
+  padding: 140px 0 80px;
+}
+
+.back {
+  margin-bottom: 1rem;
+}
+
+.content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+}
+
+.datetime {
+  color: var(--chakra-colors-gray-400);
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  margin-bottom: 2rem;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.prose {
+  max-width: 80%;
+}

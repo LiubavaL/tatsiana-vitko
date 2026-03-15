@@ -11,7 +11,7 @@ export const Posts: CollectionConfig = {
       type: 'text',
     },
     {
-      name: 'background image',
+      name: 'backgroundImage',
       type: 'upload',
       relationTo: 'media',
       filterOptions: {
@@ -19,6 +19,10 @@ export const Posts: CollectionConfig = {
           contains: 'image',
         },
       },
+    },
+    {
+      name: 'description',
+      type: 'text',
     },
     {
       name: 'content',

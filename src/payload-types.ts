@@ -188,7 +188,8 @@ export interface Media {
 export interface Post {
   id: string;
   title?: string | null;
-  'background image'?: (string | null) | Media;
+  backgroundImage?: (string | null) | Media;
+  description?: string | null;
   content: {
     root: {
       type: string;
@@ -408,7 +409,8 @@ export interface MediaSelect<T extends boolean = true> {
  */
 export interface PostsSelect<T extends boolean = true> {
   title?: T;
-  'background image'?: T;
+  backgroundImage?: T;
+  description?: T;
   content?: T;
   author?: T;
   updatedAt?: T;
