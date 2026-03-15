@@ -72,6 +72,7 @@ export interface Config {
     posts: Post;
     testimonials: Testimonial;
     quizzes: Quiz;
+    certificates: Certificate;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -83,6 +84,7 @@ export interface Config {
     posts: PostsSelect<false> | PostsSelect<true>;
     testimonials: TestimonialsSelect<false> | TestimonialsSelect<true>;
     quizzes: QuizzesSelect<false> | QuizzesSelect<true>;
+    certificates: CertificatesSelect<false> | CertificatesSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
     'payload-migrations': PayloadMigrationsSelect<false> | PayloadMigrationsSelect<true>;
@@ -279,6 +281,18 @@ export interface Quiz {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "certificates".
+ */
+export interface Certificate {
+  id: string;
+  documentImage: string | Media;
+  title?: string | null;
+  decription?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
@@ -303,6 +317,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'quizzes';
         value: string | Quiz;
+      } | null)
+    | ({
+        relationTo: 'certificates';
+        value: string | Certificate;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -483,6 +501,17 @@ export interface QuizzesSelect<T extends boolean = true> {
             };
         id?: T;
       };
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "certificates_select".
+ */
+export interface CertificatesSelect<T extends boolean = true> {
+  documentImage?: T;
+  title?: T;
+  decription?: T;
   updatedAt?: T;
   createdAt?: T;
 }

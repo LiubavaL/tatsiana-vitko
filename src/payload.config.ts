@@ -17,6 +17,7 @@ import { Footer } from './globals/Footer'
 import { Socials } from './globals/Socials'
 import { Testimonials } from './collections/Testimonials'
 import { Quizzes } from './collections/Quizzes'
+import { Certificates } from './collections/Certificates'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -32,7 +33,7 @@ export default buildConfig({
       robots: 'noindex, nofollow',
     },
   },
-  collections: [Users, Media, Posts, Testimonials, Quizzes],
+  collections: [Users, Media, Posts, Testimonials, Quizzes, Certificates],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   telemetry: false,
