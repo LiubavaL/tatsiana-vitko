@@ -22,3 +22,7 @@
 .heading {
   margin-bottom: 12px;
 }
+
+.heading {
+  text-wrap: balance;
+}
