@@ -13,16 +13,8 @@
   margin-left: var(--chakra-spacing-10);
 }
 
-.description {
-  line-height: 1.5;
-  color: var(--chakra-colors-gray-300);
-}
-
 .title,
 .heading {
   margin-bottom: 12px;
 }
 
-.heading {
-  text-wrap: balance;
-}

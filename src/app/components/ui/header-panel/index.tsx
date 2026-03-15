@@ -1,6 +1,7 @@
-import { Heading, Text } from '@chakra-ui/react'
 import styles from './HeaderPanel.module.css'
 import SectionHeading from '../section-heading'
+import PageHeading from '../page-heading'
+import PageDescription from '../page-description'
 
 export default function HeaderPanel(props: {
   title: string
@@ -11,12 +12,8 @@ export default function HeaderPanel(props: {
     <section className={styles.container}>
       <div className={styles.text}>
         <SectionHeading className={styles.title}>{props.title}</SectionHeading>
-        <Heading className={styles.heading} size="5xl" fontWeight="light">
-          {props.heading}
-        </Heading>
-        <Text className={styles.description} fontWeight="extralight">
-          {props.description}
-        </Text>
+        {props.heading && <PageHeading title={props.heading} />}
+        {props.description && <PageDescription description={props.description} />}
       </div>
     </section>
   )
