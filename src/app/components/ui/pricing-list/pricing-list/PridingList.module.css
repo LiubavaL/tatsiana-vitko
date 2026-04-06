@@ -1,0 +1,4 @@
+
+.list > *:not(:last-child) {
+    border-bottom: 1px solid var(--chakra-colors-gray-800);
+}
